@@ -1,0 +1,13 @@
+{
+  "itemGroup.createrecipefrenzy": "Example Mod Tab",
+  "block.createrecipefrenzy.example_block": "Example Block",
+  "item.createrecipefrenzy.example_item": "Example Item",
+
+  "createrecipefrenzy.configuration.title": "Create: Recipe Frenzy Configs",
+  "createrecipefrenzy.configuration.section.createrecipefrenzy.common.toml": "Create: Recipe Frenzy Configs",
+  "createrecipefrenzy.configuration.section.createrecipefrenzy.common.toml.title": "Create: Recipe Frenzy Configs",
+  "createrecipefrenzy.configuration.items": "Item List",
+  "createrecipefrenzy.configuration.logDirtBlock": "Log Dirt Block",
+  "createrecipefrenzy.configuration.magicNumberIntroduction": "Magic Number Text",
+  "createrecipefrenzy.configuration.magicNumber": "Magic Number"
+}
