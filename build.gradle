@@ -113,6 +113,8 @@ dependencies {
 
     // Create dependency
     implementation files("libs/create-1.21.1-6.0.6.jar")
+    // JEI dependency
+    implementation files("libs/jei-1.21.1-neoforge-19.22.1.316.jar")
 
     // Example project dependency using a sister or child project:
     // implementation project(":myproject")
