@@ -1,2 +1,2 @@
-# Create-Recipe-Frenzy
+# Create: Recipe Frenzy
 adds a bunch of recipes
