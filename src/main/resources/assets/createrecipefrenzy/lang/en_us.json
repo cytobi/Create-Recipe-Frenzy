@@ -1,7 +1,9 @@
 {
-  "itemGroup.createrecipefrenzy": "Example Mod Tab",
+  "itemGroup.createrecipefrenzy": "Create: Recipe Frenzy",
   "block.createrecipefrenzy.example_block": "Example Block",
   "item.createrecipefrenzy.example_item": "Example Item",
+
+  
 
   "createrecipefrenzy.configuration.title": "Create: Recipe Frenzy Configs",
   "createrecipefrenzy.configuration.section.createrecipefrenzy.common.toml": "Create: Recipe Frenzy Configs",
