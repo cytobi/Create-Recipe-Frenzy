@@ -11,6 +11,11 @@
       "chance": 0.25,
       "count": 1,
       "id": "minecraft:lapis_lazuli"
+    },
+    {
+      "chance": 0.9,
+      "count": 1,
+      "id": "minecraft:calcite"
     }
   ]
 }
