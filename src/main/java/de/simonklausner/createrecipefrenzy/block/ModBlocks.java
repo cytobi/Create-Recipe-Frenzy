@@ -25,6 +25,14 @@ public class ModBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(1.5F, 6.0F))
         );*/
+    public static final DeferredBlock<Block> DOLOMITE = registerBlock("dolomite", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
