@@ -4,6 +4,7 @@ import de.simonklausner.createrecipefrenzy.CreateRecipeFrenzy;
 import de.simonklausner.createrecipefrenzy.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -88,6 +89,14 @@ public class ModBlocks {
                 .instrument(NoteBlockInstrument.BASEDRUM)
                 .requiresCorrectToolForDrops()
                 .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> PYRITE_BLOCK = registerBlock("pyrite_block", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.GOLD)
+                .instrument(NoteBlockInstrument.BELL)
+                .requiresCorrectToolForDrops()
+                .strength(3.0F, 6.0F)
+                .sound(SoundType.METAL))
         );
     
 

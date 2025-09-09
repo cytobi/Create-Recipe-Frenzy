@@ -60,6 +60,8 @@ public class CreateRecipeFrenzy {
                 output.accept(ModBlocks.RED_MARBLE);
                 output.accept(ModBlocks.WHITE_MARBLE);
                 output.accept(ModBlocks.YELLOW_MARBLE);
+                output.accept(ModBlocks.PYRITE_BLOCK);
+                output.accept(ModItems.PYRITE);
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.

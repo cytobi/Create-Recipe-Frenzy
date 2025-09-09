@@ -2,6 +2,9 @@
   "itemGroup.createrecipefrenzy": "Create: Recipe Frenzy",
   "block.createrecipefrenzy.example_block": "Example Block",
   "item.createrecipefrenzy.example_item": "Example Item",
+
+  "item.createrecipefrenzy.pyrite": "Pyrite",
+
   "block.createrecipefrenzy.dolomite": "Dolomite",
   "block.createrecipefrenzy.black_marble": "Black Marble",
   "block.createrecipefrenzy.brown_marble": "Brown Marble",
@@ -11,6 +14,7 @@
   "block.createrecipefrenzy.red_marble": "Red Marble",
   "block.createrecipefrenzy.white_marble": "White Marble",
   "block.createrecipefrenzy.yellow_marble": "Yellow Marble",
+  "block.createrecipefrenzy.pyrite_block": "Block of Pyrite",
   
 
   "createrecipefrenzy.configuration.title": "Create: Recipe Frenzy Configs",

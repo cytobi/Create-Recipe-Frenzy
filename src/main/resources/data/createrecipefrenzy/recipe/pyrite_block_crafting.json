@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "key": {
+        "P": {
+            "item": "createrecipefrenzy:pyrite"
+        }
+    },
+    "pattern": [
+        "PPP",
+        "PPP",
+        "PPP"
+    ],
+    "result": {
+        "count": 1,
+        "id": "createrecipefrenzy:pyrite_block"
+    }
+}

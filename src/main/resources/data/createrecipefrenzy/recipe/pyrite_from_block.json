@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "category": "misc",
+    "ingredients": [
+        {
+            "item": "createrecipefrenzy:pyrite_block"
+        }
+    ],
+    "result": {
+        "count": 9,
+        "id": "createrecipefrenzy:pyrite"
+    }
+}
