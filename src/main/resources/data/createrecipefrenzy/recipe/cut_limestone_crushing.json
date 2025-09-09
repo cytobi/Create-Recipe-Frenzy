@@ -1,0 +1,27 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "create:cut_limestone"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+
+    {
+      "chance": 1,
+      "count": 1,
+      "id": "minecraft:calcite"
+    },
+    {
+      "chance": 0.2,
+      "count": 1,
+      "id": "createrecipefrenzy:dolomite"
+    },
+    {
+      "chance": 0.005,
+      "count": 1,
+      "id": "minecraft:lapis_lazuli"
+    }
+  ]
+}
