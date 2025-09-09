@@ -32,6 +32,63 @@ public class ModBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(1.5F, 6.0F))
         );
+    public static final DeferredBlock<Block> BLACK_MARBLE = registerBlock("black_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> BROWN_MARBLE = registerBlock("brown_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> GRAY_MARBLE = registerBlock("gray_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> GREEN_MARBLE = registerBlock("green_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> LUMINOUS_MARBLE = registerBlock("luminous_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .lightLevel(p_152686_ -> 5)
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> RED_MARBLE = registerBlock("red_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> WHITE_MARBLE = registerBlock("white_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> YELLOW_MARBLE = registerBlock("yellow_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
     
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){

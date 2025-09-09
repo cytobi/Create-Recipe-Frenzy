@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "m": {
+      "tag": "createrecipefrenzy:stonetype_marble"
+    },
+    "c": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "pattern": [
+    "mmm",
+    "mcm",
+    "mmm"
+  ],
+  "result": {
+    "count": 8,
+    "id": "createrecipefrenzy:green_marble"
+  }
+}

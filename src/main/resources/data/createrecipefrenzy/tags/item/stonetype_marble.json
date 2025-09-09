@@ -1,7 +1,5 @@
 {
-    "replace": false,
     "values": [
-        "createrecipefrenzy:dolomite",
         "createrecipefrenzy:black_marble",
         "createrecipefrenzy:brown_marble",
         "createrecipefrenzy:gray_marble",

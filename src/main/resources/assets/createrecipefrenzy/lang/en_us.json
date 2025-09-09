@@ -3,6 +3,14 @@
   "block.createrecipefrenzy.example_block": "Example Block",
   "item.createrecipefrenzy.example_item": "Example Item",
   "block.createrecipefrenzy.dolomite": "Dolomite",
+  "block.createrecipefrenzy.black_marble": "Black Marble",
+  "block.createrecipefrenzy.brown_marble": "Brown Marble",
+  "block.createrecipefrenzy.gray_marble": "Gray Marble",
+  "block.createrecipefrenzy.green_marble": "Green Marble",
+  "block.createrecipefrenzy.luminous_marble": "Luminous Marble",
+  "block.createrecipefrenzy.red_marble": "Red Marble",
+  "block.createrecipefrenzy.white_marble": "White Marble",
+  "block.createrecipefrenzy.yellow_marble": "Yellow Marble",
   
 
   "createrecipefrenzy.configuration.title": "Create: Recipe Frenzy Configs",

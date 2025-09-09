@@ -51,7 +51,15 @@ public class CreateRecipeFrenzy {
             .withTabsBefore(ResourceLocation.fromNamespaceAndPath("create", "palettes")) //sort creative mode tab after Create's Building Blocks
             .icon(() -> new ItemStack(ModBlocks.DOLOMITE)) //set Tab Icon
             .displayItems((parameters, output) -> {
-                output.accept(ModBlocks.DOLOMITE); // Add Dolomite to the Tab
+                output.accept(ModBlocks.DOLOMITE);
+                output.accept(ModBlocks.BLACK_MARBLE);
+                output.accept(ModBlocks.BROWN_MARBLE);
+                output.accept(ModBlocks.GRAY_MARBLE);
+                output.accept(ModBlocks.GREEN_MARBLE);
+                output.accept(ModBlocks.LUMINOUS_MARBLE);
+                output.accept(ModBlocks.RED_MARBLE);
+                output.accept(ModBlocks.WHITE_MARBLE);
+                output.accept(ModBlocks.YELLOW_MARBLE);
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
