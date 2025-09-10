@@ -49,6 +49,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/libs/yourmod-${{ github.ref_name }}.jar
-          asset_name: yourmod-${{ github.ref_name }}.jar
+          asset_path: ./build/libs/createrecipefrenzy-${{ github.ref_name }}.jar
+          asset_name: createrecipefrenzy-${{ github.ref_name }}.jar
           asset_content_type: application/java-archive
