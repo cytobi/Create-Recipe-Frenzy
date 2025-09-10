@@ -4,6 +4,7 @@ import de.simonklausner.createrecipefrenzy.CreateRecipeFrenzy;
 import de.simonklausner.createrecipefrenzy.item.ModItems;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
@@ -25,6 +26,79 @@ public class ModBlocks {
                 .requiresCorrectToolForDrops()
                 .strength(1.5F, 6.0F))
         );*/
+    public static final DeferredBlock<Block> DOLOMITE = registerBlock("dolomite", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> BLACK_MARBLE = registerBlock("black_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> BROWN_MARBLE = registerBlock("brown_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> GRAY_MARBLE = registerBlock("gray_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> GREEN_MARBLE = registerBlock("green_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> LUMINOUS_MARBLE = registerBlock("luminous_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .lightLevel(p_152686_ -> 5)
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> RED_MARBLE = registerBlock("red_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> WHITE_MARBLE = registerBlock("white_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> YELLOW_MARBLE = registerBlock("yellow_marble", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.QUARTZ)
+                .instrument(NoteBlockInstrument.BASEDRUM)
+                .requiresCorrectToolForDrops()
+                .strength(1.5F, 6.0F))
+        );
+    public static final DeferredBlock<Block> PYRITE_BLOCK = registerBlock("pyrite_block", 
+        () -> new Block (BlockBehaviour.Properties.of()
+                .mapColor(MapColor.GOLD)
+                .instrument(NoteBlockInstrument.BELL)
+                .requiresCorrectToolForDrops()
+                .strength(3.0F, 6.0F)
+                .sound(SoundType.METAL))
+        );
+    
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block){
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

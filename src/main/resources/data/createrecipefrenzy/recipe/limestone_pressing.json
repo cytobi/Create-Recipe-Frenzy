@@ -1,0 +1,26 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "createrecipefrenzy:dolomite"
+    },
+    {
+      "item": "minecraft:calcite"
+    },
+    {
+      "type": "fluid_stack",
+      "amount": 500,
+      "fluid": "minecraft:water"
+    }
+  ],
+  "results": [
+    {
+        "count": 2,
+      "id": "create:limestone"
+    },
+    {
+        "amount": 500,
+        "id": "minecraft:water"
+    }
+  ]
+}

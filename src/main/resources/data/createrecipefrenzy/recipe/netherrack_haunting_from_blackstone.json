@@ -1,0 +1,15 @@
+
+{
+  "type": "create:haunting",
+  "ingredients": [
+    {
+      "item": "minecraft:blackstone"
+    }
+  ],
+  "results": [
+    {
+      "count": 1,
+      "id": "minecraft:netherrack"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "type": "create:mechanical_crafting",
+  "accept_mirrored": false,
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_block"
+    },
+    "E": {
+      "item": "minecraft:emerald_block"
+    },
+    "P": {
+      "item": "createrecipefrenzy:pyrite_block"
+    }, 
+    "I": {
+      "item": "createrecipefrenzy:pyrite"
+    }
+  },
+  "pattern": [
+    " GGG ",
+    " EPE ",
+    "PGPGP",
+    " GGG ",
+    " III "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:totem_of_undying"
+  },
+  "show_notification": false
+}

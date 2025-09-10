@@ -1,0 +1,17 @@
+{
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "tag": "create:stone_types/limestone"
+    },
+    {
+      "item": "minecraft:glow_ink_sac"
+    }
+  ],
+  "results": [
+    {
+      "id": "createrecipefrenzy:luminous_marble"
+    }
+  ]
+}

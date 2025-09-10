@@ -1,0 +1,26 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "minecraft:lapis_lazuli"
+    }
+  ],
+  "processing_time": 100,
+  "results": [
+    {
+      "chance": 1,
+      "count": 1,
+      "id": "minecraft:blue_dye"
+    },
+    {
+      "chance": 0.15,
+      "count": 1,
+      "id": "minecraft:calcite"
+    },
+    {
+      "chance": 0.05,
+      "count": 1,
+      "id": "createrecipefrenzy:pyrite"
+    }
+  ]
+}

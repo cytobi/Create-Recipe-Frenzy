@@ -9,11 +9,13 @@ import de.simonklausner.createrecipefrenzy.item.ModItems;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -40,27 +42,26 @@ public class CreateRecipeFrenzy {
     public static final String MODID = "createrecipefrenzy";
     // Directly reference a slf4j logger
     public static final Logger LOGGER = LogUtils.getLogger();
-    // Create a Deferred Register to hold Items which will all be registered under the "createrecipefrenzy" namespace
-    public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(MODID);
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "createrecipefrenzy" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
-
-    // Creates a new Block with the id "createrecipefrenzy:example_block", combining the namespace and path
-    //public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
-    // Creates a new BlockItem with the id "createrecipefrenzy:example_block", combining the namespace and path
-    //public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
-
-    // Creates a new food item with the id "createrecipefrenzy:example_id", nutrition 1 and saturation 2; currently needed for creative tab icon
-    public static final DeferredItem<Item> EXAMPLE_ITEM = ITEMS.registerSimpleItem("example_item", new Item.Properties().food(new FoodProperties.Builder()
-            .alwaysEdible().nutrition(1).saturationModifier(2f).build()));
 
     // Creates a creative tab with the id "createrecipefrenzy:example_tab" for the example item, that is placed after the combat tab
     public static final DeferredHolder<CreativeModeTab, CreativeModeTab> EXAMPLE_TAB = CREATIVE_MODE_TABS.register("example_tab", () -> CreativeModeTab.builder()
             .title(Component.translatable("itemGroup.createrecipefrenzy")) //The language key for the title of your CreativeModeTab
-            .withTabsBefore(CreativeModeTabs.COMBAT)
-            .icon(() -> EXAMPLE_ITEM.get().getDefaultInstance())
+            .withTabsBefore(ResourceLocation.fromNamespaceAndPath("create", "palettes")) //sort creative mode tab after Create's Building Blocks
+            .icon(() -> new ItemStack(ModBlocks.DOLOMITE)) //set Tab Icon
             .displayItems((parameters, output) -> {
-                output.accept(EXAMPLE_ITEM.get()); // Add the example item to the tab. For your own tabs, this method is preferred over the event
+                output.accept(ModBlocks.DOLOMITE);
+                output.accept(ModBlocks.BLACK_MARBLE);
+                output.accept(ModBlocks.BROWN_MARBLE);
+                output.accept(ModBlocks.GRAY_MARBLE);
+                output.accept(ModBlocks.GREEN_MARBLE);
+                output.accept(ModBlocks.LUMINOUS_MARBLE);
+                output.accept(ModBlocks.RED_MARBLE);
+                output.accept(ModBlocks.WHITE_MARBLE);
+                output.accept(ModBlocks.YELLOW_MARBLE);
+                output.accept(ModBlocks.PYRITE_BLOCK);
+                output.accept(ModItems.PYRITE);
             }).build());
 
     // The constructor for the mod class is the first code that is run when your mod is loaded.
@@ -72,7 +73,7 @@ public class CreateRecipeFrenzy {
         // Register the Deferred Register to the mod event bus so blocks get registered
         //BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
-        ITEMS.register(modEventBus);
+        //ITEMS.register(modEventBus);
         // Register the Deferred Register in the Block and Item Class to the mod event bus
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
@@ -104,10 +105,10 @@ public class CreateRecipeFrenzy {
         Config.ITEM_STRINGS.get().forEach((item) -> LOGGER.info("ITEM >> {}", item));
     }
 
-    // Add the example block item to the building blocks tab
+    // Example on Adding Blocks to Existing Creative Mode Tabs
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            //event.accept(ModBlocks.EXAMPLE_BLOCK); //Example on how to add Blocks to Creative Mode Tabs
+            //event.accept(ModBlocks.EXAMPLE_BLOCK);
         }
     }
 
