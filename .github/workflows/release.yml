@@ -29,11 +29,18 @@ jobs:
         run: chmod +x ./gradlew
 
       - name: Build JAR
-        run: ./gradlew clean build
+        run: ./gradlew build
+
+      - name: Set JAR name from tag
+        run: |
+          VERSION=${GITHUB_REF_NAME#v}   # removes leading 'v'
+          echo "JAR_NAME=createrecipefrenzy-$VERSION.jar" >> $GITHUB_ENV
 
       - name: Create GitHub Release
         id: create_release
         uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           tag_name: ${{ github.ref_name }}
           release_name: Release ${{ github.ref_name }}
@@ -43,7 +50,10 @@ jobs:
 
       - name: Upload JAR
         uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: ./build/libs/*.jar
+          asset_path: ./build/libs/${{ env.JAR_NAME }}
+          asset_name: ${{ env.JAR_NAME }}
           asset_content_type: application/java-archive
